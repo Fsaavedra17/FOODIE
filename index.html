@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>J&J: La Doble Dosis - ¡La hamburguesa más deliciosa de la ciudad!</title>
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Rubik:wght@400;500;600;700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+</head>
+
+<body id="top">
+
+  <header class="header" data-header>
+    <div class="container">
+      <h1><a href="#" class="logo">J&J: La Doble Dosis<span class="span">.</span></a></h1>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+          <li class="nav-item"><a href="#home" class="navbar-link" data-nav-link>Home</a></li>
+          <li class="nav-item"><a href="#about" class="navbar-link" data-nav-link>Sobre nosotros</a></li>
+          <li class="nav-item"><a href="#shop" class="navbar-link" data-nav-link>Tienda</a></li>
+          <li class="nav-item"><a href="#contact" class="navbar-link" data-nav-link>Contáctenos</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-btn-group">
+        <button class="search-btn" aria-label="Search" data-search-btn>
+          <ion-icon name="search-outline"></ion-icon>
+        </button>
+        <button class="btn btn-hover" id="navLoginBtn">Iniciar sesión</button>
+        <button class="nav-toggle-btn" aria-label="Toggle Menu" data-menu-toggle-btn>
+          <span class="line top"></span>
+          <span class="line middle"></span>
+          <span class="line bottom"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- SEARCH BOX -->
+  <div class="search-container" data-search-container>
+    <div class="search-box">
+      <input type="search" name="search" aria-label="Search here" placeholder="Type keywords here..." class="search-input">
+      <button class="search-submit" aria-label="Submit search" data-search-submit-btn>
+        <ion-icon name="search-outline"></ion-icon>
+      </button>
+    </div>
+    <button class="search-close-btn" aria-label="Cancel search" data-search-close-btn></button>
+  </div>
+
+  <main>
+    <article>
+      <!-- HERO -->
+      <section class="hero" id="home" style="background-image: url('./assets/images/hero-bg.jpg')">
+        <div class="container">
+          <div class="hero-content">
+            <p class="hero-subtitle">¡En un solo sitio!</p>
+            <h2 class="h1 hero-title">¿Tienes hambre de verdad?</h2>
+            <p class="hero-text">Ven y prueba lo que tenemos para ti: pizzas con todo el sabor, hamburguesas que conquistan desde el primer mordisco y bebidas frias que hacen match con cualqueir plan.</p>
+          </div>
+          <figure class="hero-banner">
+            <img src="./assets/images/hero-banner-bg.png" width="820" height="750" alt="" aria-hidden="true" class="w-100 hero-img-bg">
+            <img src="./assets/images/hero-banner.png" width="700" height="637" loading="lazy" alt="Burger" class="w-100 hero-img">
+          </figure>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="section section-divider gray about" id="about">
+        <div class="container">
+          <div class="about-banner">
+            <img src="./assets/images/about-banner.png" width="509" height="459" loading="lazy" alt="Burger with Drinks" class="w-100 about-img">
+            <img src="./assets/images/sale-shape-red.png" width="216" height="226" alt="get up to 50% off now" class="abs-img scale-up-anim">
+          </div>
+          <div class="about-content">
+            <h2 class="h2 section-title">Bebidas, hamburguesas y las mejores pizzas <span class="span">de la ciudad!</span></h2>
+            <p class="section-text">J&J: La Doble Dosis nació del amor por el sabor rápido y auténtico, un lugar donde cada bocado cuenta una historia y cada combo está hecho para disfrutar sin esperar. Aquí la comida no solo se sirve, se celebra, porque creemos que primero se come… ¡y luego se vive!</p>
+            <ul class="about-list">
+              <li class="about-item"><ion-icon name="checkmark-outline"></ion-icon><span class="span">Sabores que te hacen sonreír.</span></li>
+              <li class="about-item"><ion-icon name="checkmark-outline"></ion-icon><span class="span">Rápido, fresco y delicioso.</span></li>
+              <li class="about-item"><ion-icon name="checkmark-outline"></ion-icon><span class="span">Tu antojo favorito, siempre cerca.</span></li>
+              <li class="about-item"><ion-icon name="checkmark-outline"></ion-icon><span class="span">Sabor y felicidad en cada bocado.</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- SHOP SECTION -->
+      <section class="section food-menu" id="shop">
+        <div class="container">
+          <p class="section-subtitle">NUESTROS PRODUCTOS</p>
+          <h2 class="h2 section-title">El amor puede esperar <span class="span"> Pero el hambre no!</span></h2>
+          <p class="section-text">Descubre nuestra increíble selección de hamburguesas, pizzas y bebidas.</p>
+          <div id="productsGrid" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); gap:30px; margin-top:40px;"></div>
+        </div>
+      </section>
+
+      <!-- CONTACT US SECTION -->
+      <section class="section contact" id="contact" style="background-color: var(--isabelline);">
+        <div class="container">
+          <p class="section-subtitle" style="text-align: center;">CONTÁCTANOS</p>
+          <h2 class="h2 section-title" style="text-align: center; margin-block: 10px 40px;">Estamos aquí <span class="span">para ti!</span></h2>
+          
+          <div class="contact-wrapper" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 40px;">
+            
+            <!-- Redes Sociales -->
+            <div class="contact-card" style="background: #fff; padding: 30px; border-radius: 16px; box-shadow: 0 4px 16px rgba(0,0,0,0.08); text-align: center; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 12px 32px rgba(0,0,0,0.15)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 16px rgba(0,0,0,0.08)';">
+              <div style="background: linear-gradient(135deg, #ff9d2d 0%, #ff6b1a 100%); width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px auto; box-shadow: 0 4px 12px rgba(255,107,26,0.3);">
+                <ion-icon name="logo-instagram" style="font-size: 36px; color: #fff;"></ion-icon>
+              </div>
+              <h3 style="font-family: var(--ff-rubik); font-size: 20px; color: var(--rich-black-fogra-29); margin-bottom: 10px;">Síguenos en Instagram</h3>
+              <a href="https://www.instagram.com/esteban_homez_777" target="_blank" style="color: var(--deep-saffron); font-weight: 600; text-decoration: none; transition: all 0.3s;" onmouseover="this.style.color='var(--tangerine)';" onmouseout="this.style.color='var(--deep-saffron)';">@esteban_homez_777</a>
+            </div>
+
+            <div class="contact-card" style="background: #fff; padding: 30px; border-radius: 16px; box-shadow: 0 4px 16px rgba(0,0,0,0.08); text-align: center; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 12px 32px rgba(0,0,0,0.15)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 16px rgba(0,0,0,0.08)';">
+              <div style="background: linear-gradient(135deg, #1877f2 0%, #0d5dbf 100%); width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px auto; box-shadow: 0 4px 12px rgba(24,119,242,0.3);">
+                <ion-icon name="logo-facebook" style="font-size: 36px; color: #fff;"></ion-icon>
+              </div>
+              <h3 style="font-family: var(--ff-rubik); font-size: 20px; color: var(--rich-black-fogra-29); margin-bottom: 10px;">Encuéntranos en Facebook</h3>
+              <a href="https://www.facebook.com/esteban.homez.2025" target="_blank" style="color: #1877f2; font-weight: 600; text-decoration: none; transition: all 0.3s;" onmouseover="this.style.color='#0d5dbf';" onmouseout="this.style.color='#1877f2';">esteban.homez.2025</a>
+            </div>
+
+            <!-- Teléfonos -->
+            <div class="contact-card" style="background: #fff; padding: 30px; border-radius: 16px; box-shadow: 0 4px 16px rgba(0,0,0,0.08); text-align: center; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 12px 32px rgba(0,0,0,0.15)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 16px rgba(0,0,0,0.08)';">
+              <div style="background: linear-gradient(135deg, #25d366 0%, #128c7e 100%); width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px auto; box-shadow: 0 4px 12px rgba(37,211,102,0.3);">
+                <ion-icon name="call" style="font-size: 36px; color: #fff;"></ion-icon>
+              </div>
+              <h3 style="font-family: var(--ff-rubik); font-size: 20px; color: var(--rich-black-fogra-29); margin-bottom: 15px;">Llámanos</h3>
+              <a href="tel:3108097002" style="display: block; color: #25d366; font-weight: 600; margin-bottom: 8px; text-decoration: none; transition: all 0.3s;" onmouseover="this.style.color='#128c7e';" onmouseout="this.style.color='#25d366';">310 809 7002</a>
+              <a href="tel:3156450340" style="display: block; color: #25d366; font-weight: 600; text-decoration: none; transition: all 0.3s;" onmouseover="this.style.color='#128c7e';" onmouseout="this.style.color='#25d366';">315 645 0340</a>
+            </div>
+
+            <!-- Correos -->
+            <div class="contact-card" style="background: #fff; padding: 30px; border-radius: 16px; box-shadow: 0 4px 16px rgba(0,0,0,0.08); text-align: center; transition: all 0.3s ease;" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 12px 32px rgba(0,0,0,0.15)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 16px rgba(0,0,0,0.08)';">
+              <div style="background: linear-gradient(135deg, #ea4335 0%, #c5221f 100%); width: 70px; height: 70px; border-radius: 50%; display: flex; align-items: center; justify-content: center; margin: 0 auto 20px auto; box-shadow: 0 4px 12px rgba(234,67,53,0.3);">
+                <ion-icon name="mail" style="font-size: 36px; color: #fff;"></ion-icon>
+              </div>
+              <h3 style="font-family: var(--ff-rubik); font-size: 20px; color: var(--rich-black-fogra-29); margin-bottom: 15px;">Escríbenos</h3>
+              <a href="mailto:jairo.homez@cun.edu.co" style="display: block; color: #ea4335; font-weight: 600; font-size: 14px; margin-bottom: 8px; text-decoration: none; word-break: break-all; transition: all 0.3s;" onmouseover="this.style.color='#c5221f';" onmouseout="this.style.color='#ea4335';">jairo.homez@cun.edu.co</a>
+              <a href="mailto:francisco.saavedra@cun.edu.co" style="display: block; color: #ea4335; font-weight: 600; font-size: 14px; text-decoration: none; word-break: break-all; transition: all 0.3s;" onmouseover="this.style.color='#c5221f';" onmouseout="this.style.color='#ea4335';">francisco.saavedra@cun.edu.co</a>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer-top" style="background-image: url('./assets/images/footer-illustration.png')">
+      <div class="container">
+        <div class="footer-brand">
+          <a href="" class="logo">J&J: La Doble Dosis<span class="span">.</span></a>
+          <p class="footer-text">El mejor sabor de la ciudad, rápido y delicioso. Tu antojo favorito, siempre cerca.</p>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom" style="padding-block: 30px;">
+      <div class="container">
+        <div style="text-align: center; margin-bottom: 15px;">
+          <p style="color: var(--rich-black-fogra-29); font-weight: 600; font-size: 15px; margin-bottom: 8px;">Realizado por:</p>
+          <p style="color: var(--sonic-silver); font-weight: 500; margin-bottom: 4px;">FRANCISCO JAVIER SAAVEDRA VILLAMIL</p>
+          <p style="color: var(--sonic-silver); font-weight: 500; margin-bottom: 15px;">JAIRO ESTEBAN HOMEZ OCAMPO</p>
+          <p style="color: var(--rich-black-fogra-29); font-size: 14px; margin-bottom: 4px;">Para la materia: <strong>DESARROLLO WEB/14767</strong></p>
+          <p style="color: var(--deep-saffron); font-weight: 600; font-size: 15px;">Docente: JUAN DAVID FORERO ACOSTA</p>
+        </div>
+        <p class="copyright-text" style="margin-top: 15px;">&copy; 2025 J&J: La Doble Dosis. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BACK TO TOP -->
+  <a href="#top" class="back-top-btn" aria-label="Back to top" data-back-top-btn>
+    <ion-icon name="chevron-up"></ion-icon>
+  </a>
+
+  <!-- FLOATING CART ICON -->
+  <button id="floatingCartBtn" style="position:fixed; bottom:20px; right:20px; width:60px; height:60px; border-radius:50%; background:linear-gradient(135deg, #ff9d2d 0%, #ff6b1a 100%); border:none; box-shadow:0 8px 24px rgba(255,107,26,0.4); cursor:pointer; z-index:9997; display:flex; align-items:center; justify-content:center; transition:all 0.3s ease; transform:scale(1);" onmouseover="this.style.transform='scale(1.1)'; this.style.boxShadow='0 12px 32px rgba(255,107,26,0.5)';" onmouseout="this.style.transform='scale(1)'; this.style.boxShadow='0 8px 24px rgba(255,107,26,0.4)';">
+    <ion-icon name="cart" style="font-size:28px; color:#fff;"></ion-icon>
+    <span id="cartBadge" style="position:absolute; top:-5px; right:-5px; background:#e94444; color:#fff; border-radius:50%; width:24px; height:24px; display:flex; align-items:center; justify-content:center; font-size:12px; font-weight:700; border:2px solid #fff;">0</span>
+  </button>
+
+  <!-- CART SIDEBAR -->
+  <div id="cartSidebar" style="position:fixed; right:-400px; top:0; width:380px; height:100vh; background:#fff; box-shadow:-4px 0 24px rgba(0,0,0,0.15); z-index:9999; transition:right 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55); display:flex; flex-direction:column; overflow:hidden;">
+    <div style="background:linear-gradient(135deg, #ff9d2d 0%, #ff6b1a 100%); padding:20px; display:flex; justify-content:space-between; align-items:center; box-shadow:0 2px 8px rgba(0,0,0,0.1);">
+      <h3 style="color:#fff; margin:0; font-size:22px; font-weight:600;">🛒 Mi Carrito</h3>
+      <button id="closeCartBtn" style="background:rgba(255,255,255,0.2); border:none; color:#fff; width:32px; height:32px; border-radius:50%; cursor:pointer; display:flex; align-items:center; justify-content:center; transition:all 0.3s;" onmouseover="this.style.background='rgba(255,255,255,0.3)';" onmouseout="this.style.background='rgba(255,255,255,0.2)';">
+        <ion-icon name="close" style="font-size:20px;"></ion-icon>
+      </button>
+    </div>
+    <div id="cartItems" style="flex:1; overflow-y:auto; padding:20px;"></div>
+    <div style="padding:20px; border-top:2px solid #f5f5f5; background:#fafafa;">
+      <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px; font-size:18px; font-weight:600;">
+        <span style="color:#333;">Total:</span>
+        <span id="cartTotal" style="color:#ff6b1a; font-size:24px;">$0.00</span>
+      </div>
+      <button id="btnCheckout" style="width:100%; padding:14px; background:linear-gradient(135deg, #ff9d2d 0%, #ff6b1a 100%); color:#fff; border:none; border-radius:8px; font-size:16px; font-weight:600; cursor:pointer; box-shadow:0 4px 12px rgba(255,107,26,0.3); transition:all 0.3s; position:relative; overflow:hidden;" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 16px rgba(255,107,26,0.4)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 12px rgba(255,107,26,0.3)';">
+        Proceder al Pago 💳
+      </button>
+      <div id="checkoutMsg" style="margin-top:12px; text-align:center; font-size:14px; font-weight:500;"></div>
+    </div>
+  </div>
+
+  <!-- CART OVERLAY -->
+  <div id="cartOverlay" style="position:fixed; inset:0; background:rgba(0,0,0,0.5); z-index:9998; display:none; opacity:0; transition:opacity 0.3s;"></div>
+
+  <!-- LOGIN MODAL -->
+  <div id="loginModal" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.6); align-items:center; justify-content:center; z-index:10000; backdrop-filter:blur(4px);">
+    <div style="background:#fff; padding:0; width:420px; border-radius:16px; box-shadow:0 20px 60px rgba(0,0,0,0.3); overflow:hidden; animation:modalSlideIn 0.4s ease-out;">
+      <div style="background:linear-gradient(135deg, #ff9d2d 0%, #ff6b1a 100%); padding:24px; text-align:center;">
+        <h3 style="color:#fff; margin:0; font-size:26px; font-weight:700;">🍔 Bienvenido a J&J: La Doble Dosis</h3>
+        <p style="color:rgba(255,255,255,0.9); margin:8px 0 0 0; font-size:14px;">Inicia sesión o crea una cuenta</p>
+      </div>
+      <div style="padding:30px;">
+        <input id="authName" placeholder="Nombre completo" style="width:100%; margin:0 0 14px 0; padding:14px 16px; border:2px solid #e0e0e0; border-radius:8px; font-size:15px; transition:all 0.3s;" onfocus="this.style.borderColor='#ff9d2d'; this.style.boxShadow='0 0 0 3px rgba(255,157,45,0.1)';" onblur="this.style.borderColor='#e0e0e0'; this.style.boxShadow='none';">
+        <input id="authCedula" placeholder="Número de cédula" style="width:100%; margin:0 0 14px 0; padding:14px 16px; border:2px solid #e0e0e0; border-radius:8px; font-size:15px; transition:all 0.3s;" onfocus="this.style.borderColor='#ff9d2d'; this.style.boxShadow='0 0 0 3px rgba(255,157,45,0.1)';" onblur="this.style.borderColor='#e0e0e0'; this.style.boxShadow='none';">
+        <input id="authEmail" placeholder="Correo electrónico" type="email" style="width:100%; margin:0 0 14px 0; padding:14px 16px; border:2px solid #e0e0e0; border-radius:8px; font-size:15px; transition:all 0.3s;" onfocus="this.style.borderColor='#ff9d2d'; this.style.boxShadow='0 0 0 3px rgba(255,157,45,0.1)';" onblur="this.style.borderColor='#e0e0e0'; this.style.boxShadow='none';">
+        <input id="authPassword" placeholder="Contraseña (mín. 6 caracteres)" type="password" style="width:100%; margin:0 0 20px 0; padding:14px 16px; border:2px solid #e0e0e0; border-radius:8px; font-size:15px; transition:all 0.3s;" onfocus="this.style.borderColor='#ff9d2d'; this.style.boxShadow='0 0 0 3px rgba(255,157,45,0.1)';" onblur="this.style.borderColor='#e0e0e0'; this.style.boxShadow='none';">
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:16px;">
+          <button id="btnRegister" style="padding:14px; background:linear-gradient(135deg, #4CAF50 0%, #45a049 100%); color:#fff; border:none; border-radius:8px; font-size:15px; font-weight:600; cursor:pointer; transition:all 0.3s; box-shadow:0 4px 12px rgba(76,175,80,0.3);" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 16px rgba(76,175,80,0.4)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 12px rgba(76,175,80,0.3)';">
+            Registrarme
+          </button>
+          <button id="btnLogin" style="padding:14px; background:linear-gradient(135deg, #ff9d2d 0%, #ff6b1a 100%); color:#fff; border:none; border-radius:8px; font-size:15px; font-weight:600; cursor:pointer; transition:all 0.3s; box-shadow:0 4px 12px rgba(255,107,26,0.3);" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 16px rgba(255,107,26,0.4)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 12px rgba(255,107,26,0.3)';">
+            Iniciar Sesión
+          </button>
+        </div>
+        <button id="btnCloseLogin" style="width:100%; padding:12px; background:#f5f5f5; color:#666; border:none; border-radius:8px; font-size:14px; font-weight:500; cursor:pointer; transition:all 0.3s;" onmouseover="this.style.background='#e0e0e0';" onmouseout="this.style.background='#f5f5f5';">
+          Cancelar
+        </button>
+        <div id="authMsg" style="margin-top:16px; text-align:center; font-size:14px; font-weight:500; padding:10px; border-radius:8px;"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- PAYMENT ORDER SUMMARY MODAL -->
+  <div id="orderSummaryModal" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.7); align-items:center; justify-content:center; z-index:10001; backdrop-filter:blur(6px);">
+    <div style="background:#fff; padding:0; width:90%; max-width:500px; max-height:90vh; border-radius:20px; box-shadow:0 25px 70px rgba(0,0,0,0.4); overflow:hidden; animation:modalSlideIn 0.5s ease-out;">
+      <div style="background:linear-gradient(135deg, #ff9d2d 0%, #ff6b1a 100%); padding:25px; text-align:center; position:relative;">
+        <ion-icon name="receipt-outline" style="font-size:48px; color:#fff; margin-bottom:10px;"></ion-icon>
+        <h3 style="color:#fff; margin:0; font-size:24px; font-weight:700;">Resumen de tu Pedido</h3>
+        <p style="color:rgba(255,255,255,0.9); margin:8px 0 0 0; font-size:14px;">Revisa tu orden antes de pagar</p>
+      </div>
+      <div style="padding:25px; max-height:400px; overflow-y:auto;">
+        <div id="orderItemsList" style="margin-bottom:20px;"></div>
+        <div style="border-top:2px solid #f0f0f0; padding-top:15px; margin-top:15px;">
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:10px;">
+            <span style="font-size:16px; color:#666;">Subtotal:</span>
+            <span id="orderSubtotal" style="font-size:16px; color:#333; font-weight:600;">$0.00</span>
+          </div>
+          <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:15px; padding-bottom:15px; border-bottom:2px dashed #e0e0e0;">
+            <span style="font-size:16px; color:#666;">Domicilio:</span>
+            <span style="font-size:16px; color:#333; font-weight:600;">$5.000</span>
+          </div>
+          <div style="display:flex; justify-content:space-between; align-items:center;">
+            <span style="font-size:20px; color:#333; font-weight:700;">TOTAL:</span>
+            <span id="orderGrandTotal" style="font-size:26px; color:#ff6b1a; font-weight:800;">$0.00</span>
+          </div>
+        </div>
+      </div>
+      <div style="padding:25px; padding-top:0; display:grid; grid-template-columns:1fr 1fr; gap:12px;">
+        <button id="btnCancelOrder" style="padding:14px; background:#f5f5f5; color:#666; border:none; border-radius:10px; font-size:15px; font-weight:600; cursor:pointer; transition:all 0.3s;" onmouseover="this.style.background='#e0e0e0';" onmouseout="this.style.background='#f5f5f5';">
+          ❌ Cancelar
+        </button>
+        <button id="btnProceedToPayment" style="padding:14px; background:linear-gradient(135deg, #4CAF50 0%, #45a049 100%); color:#fff; border:none; border-radius:10px; font-size:15px; font-weight:600; cursor:pointer; transition:all 0.3s; box-shadow:0 4px 12px rgba(76,175,80,0.3);" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 16px rgba(76,175,80,0.4)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 12px rgba(76,175,80,0.3)';">
+          💳 Pagar
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- PAYMENT CARD DETAILS MODAL -->
+  <div id="paymentCardModal" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.7); align-items:center; justify-content:center; z-index:10002; backdrop-filter:blur(6px);">
+    <div style="background:#fff; padding:0; width:90%; max-width:450px; border-radius:20px; box-shadow:0 25px 70px rgba(0,0,0,0.4); overflow:hidden; animation:modalSlideIn 0.5s ease-out;">
+      <div style="background:linear-gradient(135deg, #667eea 0%, #764ba2 100%); padding:25px; text-align:center;">
+        <ion-icon name="card-outline" style="font-size:48px; color:#fff; margin-bottom:10px;"></ion-icon>
+        <h3 style="color:#fff; margin:0; font-size:24px; font-weight:700;">Datos de Pago</h3>
+        <p style="color:rgba(255,255,255,0.9); margin:8px 0 0 0; font-size:14px;">Ingresa los datos de tu tarjeta</p>
+      </div>
+      <div style="padding:30px;">
+        <div style="margin-bottom:20px;">
+          <label style="display:block; margin-bottom:8px; color:#333; font-weight:600; font-size:14px;">Número de Tarjeta</label>
+          <input id="cardNumber" type="text" placeholder="1234 5678 9012 3456" maxlength="19" style="width:100%; padding:14px 16px; border:2px solid #e0e0e0; border-radius:10px; font-size:16px; letter-spacing:2px; transition:all 0.3s;" onfocus="this.style.borderColor='#667eea'; this.style.boxShadow='0 0 0 3px rgba(102,126,234,0.1)';" onblur="this.style.borderColor='#e0e0e0'; this.style.boxShadow='none';">
+          <small style="display:block; margin-top:6px; color:#999; font-size:12px;">16 dígitos sin espacios</small>
+        </div>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:15px; margin-bottom:20px;">
+          <div>
+            <label style="display:block; margin-bottom:8px; color:#333; font-weight:600; font-size:14px;">CVV</label>
+            <input id="cardCVV" type="text" placeholder="123" maxlength="4" style="width:100%; padding:14px 16px; border:2px solid #e0e0e0; border-radius:10px; font-size:16px; letter-spacing:2px; transition:all 0.3s;" onfocus="this.style.borderColor='#667eea'; this.style.boxShadow='0 0 0 3px rgba(102,126,234,0.1)';" onblur="this.style.borderColor='#e0e0e0'; this.style.boxShadow='none';">
+            <small style="display:block; margin-top:6px; color:#999; font-size:12px;">3 o 4 dígitos</small>
+          </div>
+          <div>
+            <label style="display:block; margin-bottom:8px; color:#333; font-weight:600; font-size:14px;">Vencimiento</label>
+            <input id="cardExpiry" type="text" placeholder="MM/AA" maxlength="5" style="width:100%; padding:14px 16px; border:2px solid #e0e0e0; border-radius:10px; font-size:16px; letter-spacing:2px; transition:all 0.3s;" onfocus="this.style.borderColor='#667eea'; this.style.boxShadow='0 0 0 3px rgba(102,126,234,0.1)';" onblur="this.style.borderColor='#e0e0e0'; this.style.boxShadow='none';">
+            <small style="display:block; margin-top:6px; color:#999; font-size:12px;">MM/AA</small>
+          </div>
+        </div>
+        <div style="margin-bottom:25px;">
+          <label style="display:block; margin-bottom:8px; color:#333; font-weight:600; font-size:14px;">Contraseña de la Tarjeta</label>
+          <input id="cardPassword" type="password" placeholder="••••••" maxlength="6" style="width:100%; padding:14px 16px; border:2px solid #e0e0e0; border-radius:10px; font-size:16px; transition:all 0.3s;" onfocus="this.style.borderColor='#667eea'; this.style.boxShadow='0 0 0 3px rgba(102,126,234,0.1)';" onblur="this.style.borderColor='#e0e0e0'; this.style.boxShadow='none';">
+          <small style="display:block; margin-top:6px; color:#999; font-size:12px;">Contraseña de tu tarjeta</small>
+        </div>
+        <div id="paymentErrorMsg" style="margin-bottom:15px; padding:12px; background:#ffebee; color:#c62828; border-radius:8px; font-size:14px; font-weight:500; display:none; text-align:center;"></div>
+        <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">
+          <button id="btnCancelPayment" style="padding:14px; background:#f5f5f5; color:#666; border:none; border-radius:10px; font-size:15px; font-weight:600; cursor:pointer; transition:all 0.3s;" onmouseover="this.style.background='#e0e0e0';" onmouseout="this.style.background='#f5f5f5';">
+            Cancelar
+          </button>
+          <button id="btnConfirmPayment" style="padding:14px; background:linear-gradient(135deg, #667eea 0%, #764ba2 100%); color:#fff; border:none; border-radius:10px; font-size:15px; font-weight:600; cursor:pointer; transition:all 0.3s; box-shadow:0 4px 12px rgba(102,126,234,0.3);" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 16px rgba(102,126,234,0.4)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 12px rgba(102,126,234,0.3)';">
+            ✓ Confirmar Pago
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SUCCESS PAYMENT MODAL -->
+  <div id="successPaymentModal" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,0.7); align-items:center; justify-content:center; z-index:10003; backdrop-filter:blur(6px);">
+    <div style="background:#fff; padding:0; width:90%; max-width:400px; border-radius:20px; box-shadow:0 25px 70px rgba(0,0,0,0.4); overflow:hidden; animation:successPulse 0.6s ease-out;">
+      <div style="background:linear-gradient(135deg, #4CAF50 0%, #45a049 100%); padding:40px; text-align:center;">
+        <div style="width:80px; height:80px; background:#fff; border-radius:50%; display:flex; align-items:center; justify-content:center; margin:0 auto 20px auto; animation:successCheckmark 0.5s ease-out;">
+          <ion-icon name="checkmark-circle" style="font-size:64px; color:#4CAF50;"></ion-icon>
+        </div>
+        <h3 style="color:#fff; margin:0 0 10px 0; font-size:28px; font-weight:700;">¡Pago Exitoso!</h3>
+        <p style="color:rgba(255,255,255,0.95); margin:0; font-size:16px; line-height:1.5;">Tu compra se realizó correctamente</p>
+      </div>
+      <div style="padding:30px; text-align:center;">
+        <div style="background:#f5f5f5; padding:20px; border-radius:12px; margin-bottom:20px;">
+          <p style="margin:0 0 8px 0; color:#666; font-size:14px;">Número de orden</p>
+          <p id="orderNumber" style="margin:0; color:#333; font-size:24px; font-weight:700; letter-spacing:1px;">#00000</p>
+        </div>
+        <div style="margin-bottom:20px;">
+          <p style="margin:0 0 5px 0; color:#666; font-size:14px;">Total pagado</p>
+          <p id="paidAmount" style="margin:0; color:#4CAF50; font-size:32px; font-weight:800;">$0.00</p>
+        </div>
+        <p style="color:#999; font-size:13px; margin-bottom:25px; line-height:1.5;">Recibirás un correo de confirmación con los detalles de tu pedido.</p>
+        <button id="btnCloseSuccess" style="width:100%; padding:16px; background:linear-gradient(135deg, #4CAF50 0%, #45a049 100%); color:#fff; border:none; border-radius:12px; font-size:16px; font-weight:700; cursor:pointer; transition:all 0.3s; box-shadow:0 4px 12px rgba(76,175,80,0.3);" onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 16px rgba(76,175,80,0.4)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 12px rgba(76,175,80,0.3)';">
+          🎉 Continuar Comprando
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    @keyframes modalSlideIn {
+      from { transform: translateY(-50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    @keyframes successPulse {
+      0% { transform: scale(0.8); opacity: 0; }
+      50% { transform: scale(1.05); }
+      100% { transform: scale(1); opacity: 1; }
+    }
+    @keyframes successCheckmark {
+      0% { transform: scale(0); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+    #cartSidebar::-webkit-scrollbar { width: 6px; }
+    #cartSidebar::-webkit-scrollbar-track { background: #f1f1f1; }
+    #cartSidebar::-webkit-scrollbar-thumb { background: #ff9d2d; border-radius: 3px; }
+    #orderItemsList::-webkit-scrollbar { width: 6px; }
+    #orderItemsList::-webkit-scrollbar-track { background: #f9f9f9; }
+    #orderItemsList::-webkit-scrollbar-thumb { background: #ddd; border-radius: 3px; }
+  </style>
+
+  <script src="./assets/js/script.js" defer></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>

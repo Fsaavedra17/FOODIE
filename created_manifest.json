@@ -1,0 +1,9 @@
+{
+  "created": [
+    "server/*",
+    "assets/images/generated/*.svg",
+    "index.html(modified)",
+    "assets/js/script.js(modified)",
+    "SERVER_README.md"
+  ]
+}

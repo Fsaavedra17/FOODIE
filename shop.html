@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Shop - Foodie</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- Note: Nav copied from index.html is recommended; if your index has a nav fragment, consider copying it here -->
+  <!-- For simplicity the nav in index.html should be used when navigating from index to this page. -->
+
+  <main style="padding:40px 20px;">
+    <section style="text-align:center; margin-bottom:20px;">
+      <h2>Our Delicious Foods</h2>
+      <p>Choose from burgers, pizzas and drinks.</p>
+    </section>
+
+    <div style="max-width:1200px; margin:0 auto;">
+      <div id="shopFilters" style="text-align:center; margin-bottom:16px;">
+        <button class="filterBtn active" data-cat="All">All</button>
+        <button class="filterBtn" data-cat="Pizza">Pizza</button>
+        <button class="filterBtn" data-cat="Burger">Burger</button>
+        <button class="filterBtn" data-cat="Drink">Drinks</button>
+      </div>
+
+      <div id="shopGrid" style="display:grid; grid-template-columns:repeat(3,1fr); gap:24px;"></div>
+    </div>
+  </main>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
